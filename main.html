@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Wave</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block red" onclick="goToPage('catch.html')">
+            <span>CATCH</span>
+        </div>
+        <div class="block yellow" onclick="goToPage('the.html')">
+            <span>THE</span>
+        </div>
+        <div class="block blue" onclick="goToPage('wave.html')">
+            <span>WAVE</span>
+        </div>
+        <div class="description">
+            - seizing the right moments, adapting to life's unpredictable tides, and using challenges as momentum to move forward rather than being swept away
+        </div>
+    </div>
+
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

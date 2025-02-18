@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Churchill Quote</title>
+    <link rel="stylesheet" href="catch.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Miriam+Libre:wght@400..700&family=MonteCarlo&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        body {
+            background-color: #fdfbee;
+            margin: 0;
+            padding: 40px;
+            font-family: 'Literata', serif;
+            position: relative;
+            height: 100vh; /* Full height viewport */
+            overflow: hidden;
+        }
+        .quote {
+            font-size: 70px;
+            line-height: 1.25;
+            letter-spacing: 0px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            font-weight:600;
+            max-width: 50%;
+        }
+        .emphasize {
+            color: #e67ba0;
+            font-weight: bold;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .author {
+            position: absolute;
+            bottom: 30%;
+            right: 5%;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .description {
+            position: absolute;
+            bottom: 15%;
+            right: 5%;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 20px;
+            max-width: 350px;
+            text-align: right;
+        }
+        .right-bar {
+            position: absolute;
+            right: 0;
+            bottom: 25%;
+            background-color: #edc27f;
+            width: 20px;
+            height: 80px;
+            opacity: 30%;
+        }
+        .right-bar1 {
+            position: absolute;
+            right: 0;
+            bottom: 40%;
+            background-color: #e67ba0;
+            width: 20px;
+            height: 80px;
+        }
+        .right-bar2 {
+            position: absolute;
+            right: 0;
+            bottom: 55%;
+            background-color: #e57368;
+            width: 20px;
+            height: 80px;
+            opacity: 30%;
+        }
+        .back-arrow {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 38px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote">
+        “Success is not final, failure is not fatal: it is the <span class=emphasize>courage</span> to continue that counts.”
+    </div>
+    <div class="author">
+        WINSTON CHURCHILL (1874-1965)
+    </div>
+    <div class="description">
+        As Prime Minister of the UK during World War II, he led the nation through its darkest times with unwavering resilience.    </div>
+    <div class="right-bar"></div>
+    <div class="right-bar1"></div>
+    <div class="right-bar2"></div>
+
+    <div class="back-arrow" onclick="location.href='catch.html'">&larr;</div>
+    <div class="right-bar" onclick="location.href='red 1.html'"></div>
+    <div class="right-bar2" onclick="location.href='red 3.html'"></div>
+
+</body>
+</html>

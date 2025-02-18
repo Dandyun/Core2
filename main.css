@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Miriam+Libre:wght@400..700&family=MonteCarlo&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Miriam+Libre:wght@400..700&family=MonteCarlo&family=Noto+Sans+KR:wght@100..900&family=Podkova:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Miriam+Libre:wght@400..700&family=MonteCarlo&family=Noto+Sans+KR:wght@100..900&family=Podkova:wght@400..800&display=swap');
+
+body {
+    margin: 0;
+    background-color: #fdfbee;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    text-align: left;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    height: 80px;
+    width: fit-content; /* initial */
+    max-width: 100vw;
+
+    transition: all 0.3s ease;
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Initially collapsed */
+    background-color: inherit;
+    z-index: -1; /* Behind the text */
+    transition: width 0.3s ease;
+}
+
+.block:hover::before {
+    width: 100vw; /* Expand to full screen width */
+}
+
+.red { background-color: #e57368; margin-left: 30px; height: 90px; }
+.yellow { background-color: #edc27f; margin-left: 40px; height: 80px; }
+.blue { background-color: #7fa8d6; margin-left: 20px; height: 120px; }
+
+.red span {
+    font-family: "Miriam Libre", serif;
+    font-size: 120px;
+    font-weight: normal;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+.yellow span {
+    font-family: "Podkova", serif;
+    font-size: 110px;
+    font-weight: normal;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+.blue span {
+    font-family: "Literata", serif;
+    font-size: 150px;
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.description {
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    max-width: 300px;
+    padding-left: 30px;
+}
+
+.red:hover { background-color: #e57368; }
+.yellow:hover { background-color: #edc27f; }
+.blue:hover { background-color: #7fa8d6; }
+

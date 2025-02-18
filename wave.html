@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch</title>
+    <link rel="stylesheet" href="wave.css">
+    <style>
+        body {
+            background-color: #fdfbee;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+        }
+        .circle-button {
+            position: absolute;
+            border-radius: 50%;
+            cursor: pointer;
+            animation: scaleAnimation 2s infinite ease-in-out;
+        }
+        .circle1 { background-color: #7f81ed; width: 380px; height: 380px; top: 40%; right: 3%; }
+        .circle2 { background-color: #7bb4e6; width: 220px; height: 220px; top: 50%; right: 38%; }
+        .circle3 { background-color: #a068e5; width: 280px; height: 280px; top: 5%; right: 25%; }
+
+        .circle-button:hover, .back-arrow:hover {
+            opacity: 0.8;
+            animation-play-state: paused;
+        }
+        @keyframes scaleAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .back-arrow {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block red" onclick="location.href='catch.html'">
+            <span>CATCH</span>
+        </div>
+        <div class="block yellow" onclick="location.href='the.html'">
+            <span>THE</span>
+        </div>
+        <div class="block blue" onclick="location.href='wave.html'">
+            <span>WAVE</span>
+        </div>
+        <div class="description">
+            - seizing the right moments, adapting to life's unpredictable tides, and using challenges as momentum to move forward rather than being swept away
+        </div>
+    </div>
+
+    <div class="circle-button circle1" onclick="location.href='the.html'"></div>
+    <div class="circle-button circle2" onclick="location.href='wave.html'"></div>
+    <div class="circle-button circle3" onclick="location.href='main.html'"></div>
+
+    <div class="back-arrow" onclick="location.href='main.html'">&larr;</div>
+</body>
+</html>
