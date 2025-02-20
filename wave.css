@@ -70,7 +70,7 @@ body {
     font-size: 15px;
     color: black;
     max-width: 300px;
-    padding-left: 30px;
+    padding-left: 23px;
 }
 
 .red:hover { scale:120%; background-color: #e57368; }

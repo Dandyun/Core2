@@ -70,7 +70,7 @@ body {
     font-size: 15px;
     color: black;
     max-width: 300px;
-    padding-left: 30px;
+    padding-left: 23px;
 }
 
 .yellow:hover { scale:120%; background-color: #edc27f; }
